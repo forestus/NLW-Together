@@ -79,7 +79,7 @@
         "./src/errors/*"
       ],
       "@migrations/*": [
-        "./src/migrations/*"
+        "./src/database/migrations/*"
       ],
       "@repositories/*": [
         "./src/repositories/*"
