@@ -7,6 +7,7 @@ class UserController {
         try {
             const createUser = new UserService()
             const user = await createUser.execute({ name, email, admin })
+            console.log(user);
             return response.json(user).status(200)
         } catch (error) {
 

@@ -1,14 +1,19 @@
 {
-    "type": "sqlite",
-    "database": "src/database/database.sqlite",
+    "type": "postgres",
+    "host": "localhost",
+    "port": "5432",
+    "username": "maciel",
+    "password": "852456",
+    "database": "postgres",
+    "logging": false,
     "migrations": [
-        "src/database/migrations/*.ts"
+        "src/migrations/*.{js,ts}"
     ],
     "entities": [
-        "src/entities/*.ts"
+        "src/entities/*.{js,ts}"
     ],
     "cli": {
-        "migrationsDir": "src/database/migrations",
+        "migrationsDir": "src/migrations",
         "entitiesDir": "src/entities"
     }
 }

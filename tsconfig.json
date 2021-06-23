@@ -57,7 +57,7 @@
     "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */,
     /* Advanced Options */
     "allowJs": true,
-    "outDir": "./dist",
+    "outDir": "./dist/src",
     "rootDir": "./",
     "removeComments": true,
     "typeRoots": [
@@ -79,7 +79,7 @@
         "./src/errors/*"
       ],
       "@migrations/*": [
-        "./src/database/migrations/*"
+        "src/migrations/*"
       ],
       "@repositories/*": [
         "./src/repositories/*"
@@ -99,12 +99,10 @@
     }
   },
   "include": [
-    "ormconfig.ts",
     "src/**/**/*"
   ],
   "exclude": [
     "node_modules",
-    "src/services/Storage",
     ".babelrc",
     ".prettierrc",
     "db"
